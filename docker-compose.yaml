@@ -15,5 +15,5 @@ services:
       BIND_ADDRESS: "false"
     volumes:
     # specifies the path replace "./data".
-      - ./data:/opt/zbox/
+      - /srv/zbox:/opt/zbox/
     restart: always
