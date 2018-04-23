@@ -21,7 +21,7 @@ open soure edition:
 mkdir -p /data/zbox && docker run -d -p 80:80 -p 3306:3306 \
         -e USER="root" -e PASSWD="password" \
         -e BIND_ADDRESS="false" \
-        -v /data/zbox/:/opt/zbox/ \
+        -v /srv/zbox/:/opt/zbox/ \
         --name zentao-server \
         idoop/zentao:latest
 ```
@@ -31,7 +31,7 @@ pro edition:
 mkdir -p /data/zbox && docker run -d -p 80:80 -p 3306:3306 \
         -e USER="root" -e PASSWD="password" \
         -e BIND_ADDRESS="false" \
-        -v /data/zbox/:/opt/zbox/ \
+        -v /srv/zbox/:/opt/zbox/ \
         --name zentao-server-pro \
         idoop/zentao:pro
 ```
